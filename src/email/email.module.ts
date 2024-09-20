@@ -13,7 +13,7 @@ import { EmailController } from './email.controller';
                     secure: false,
                     auth: {
                         user: 'apikey',
-                        pass: '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',
+                        pass: '',
                     },
                 },
                 defaults: {
