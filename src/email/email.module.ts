@@ -8,16 +8,16 @@ import { EmailController } from './email.controller';
         MailerModule.forRootAsync({
             useFactory: async () => ({
                 transport: {
-                    host: 'smtp.sendgrid.net',
+                    host: '',
                     port: 587,
                     secure: false,
                     auth: {
-                        user: 'apikey',
+                        user: '',
                         pass: '',
                     },
                 },
                 defaults: {
-                    from: '"Vishnu" <vishnu.v@eimsolutions.com>',
+                    from: '"No reply" <>',
                 },
                 // template: {
                 //     dir: join(__dirname, './templates'),
